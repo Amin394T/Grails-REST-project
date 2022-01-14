@@ -1,0 +1,490 @@
+{
+	"info": {
+		"_postman_id": "e7224cee-4afc-46b9-b9bb-264c1535a6c1",
+		"name": "DINI+TAOUSSI Grails Project",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "AUTH",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"admin\",\r\n    \"password\": \"admin\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/api/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "USER GET",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJwcmluY2lwYWwiOiJINHNJQUFBQUFBQUFBSlZTdlVcL2JRQlJcL1RoTlJnVlNnRWtnZFlBRTI1RWgwek1SbjFjb05xR2tXa0VBWCsrRWVuT1wvTTNSbVNwY3BFaHd5cGFKRXFkZTNJZjlJdVwvUU5RTzNSbDd0cDNodURBZ25xVFwvZTduMzlmenhSVlVqSWJuc1daY0dEOFZXY3lsYjFMTlpXd3d6RFMzSFQ4enFDTzBPZUpGRG16U0JLNlBWd0l2Z0JLUExEd05EdGd4cXdvbTQrcG02d0JEVzJ0cldGSTZ2bUhjMXl6QkU2VVBcL1Z2dVVHbThJMUJRZTk5S01MSU5reXdNVlNadFhjbjFkc28xUnRzd1Vjd0NGUjY2MFZSSU55Z3RaOElNUTBkUXNwYkFLSUF4bHRsM2lsUTVHZ3ZqMTJZenkwVzFnYllXd09PVUdVUHU3aVZwV0dmZDNUdWJraEljd1hzb3QxT1BEblczNEtDKzRcL0ZYbFJDVW1pdHA1cHN5VVJIZjUwNmMrTHN6WnpcLzdYN3ZORWdCMXN2andOOFg4MlFwMHYrXC8rbmMyTDlrSUwwMFBXQzFpdG5aS2J5WUw1clVhbmZQbGw2OVA1MVllZFI2VHNFQnZcL3Y0XC81NVp2bU9xc3FTWmxtVmczdGlHaFB5dTZaeUZjZUpoOXNvZU0zZUpJS3BEOUtXb3h1SlFwaWlsdldTZ3o2dGpENlpqTlkzMXRlZVwvMnk3bDRyTEVxNEpOVW5lV2kzTFQ5UXRLdmVuNDhcLytuT1wvaU9FVlZJNlp5SkE2bnloQTlTeHBvVDY5T0o4WitcL3k3bHljWVwvTTNcL0FNaDBvOTRSQXdBQSIsInN1YiI6ImFkbWluIiwicm9sZXMiOlsiUk9MRV9BRE1JTiJdLCJpc3MiOiJTcHJpbmcgU2VjdXJpdHkgUkVTVCBHcmFpbHMgUGx1Z2luIiwiZXhwIjoxNjQyMTk5Mzg5LCJpYXQiOjE2NDIxOTU3ODl9.Gxlhaqn20WXzpLaGjjGmwJeel4oGf7BgPmGOHlA5DwU",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8081/api/user/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"user",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "USER PUT",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJwcmluY2lwYWwiOiJINHNJQUFBQUFBQUFBSlZTdlVcL2JRQlJcL1RoTlJnVlNnRWtnZFlBRTI1RWgwek1SbjFjb05xR2tXa0VBWCsrRWVuT1wvTTNSbVNwY3BFaHd5cGFKRXFkZTNJZjlJdVwvUU5RTzNSbDd0cDNodURBZ25xVFwvZTduMzlmenhSVlVqSWJuc1daY0dEOFZXY3lsYjFMTlpXd3d6RFMzSFQ4enFDTzBPZUpGRG16U0JLNlBWd0l2Z0JLUExEd05EdGd4cXdvbTQrcG02d0JEVzJ0cldGSTZ2bUhjMXl6QkU2VVBcL1Z2dVVHbThJMUJRZTk5S01MSU5reXdNVlNadFhjbjFkc28xUnRzd1Vjd0NGUjY2MFZSSU55Z3RaOElNUTBkUXNwYkFLSUF4bHRsM2lsUTVHZ3ZqMTJZenkwVzFnYllXd09PVUdVUHU3aVZwV0dmZDNUdWJraEljd1hzb3QxT1BEblczNEtDKzRcL0ZYbFJDVW1pdHA1cHN5VVJIZjUwNmMrTHN6WnpcLzdYN3ZORWdCMXN2andOOFg4MlFwMHYrXC8rbmMyTDlrSUwwMFBXQzFpdG5aS2J5WUw1clVhbmZQbGw2OVA1MVllZFI2VHNFQnZcL3Y0XC81NVp2bU9xc3FTWmxtVmczdGlHaFB5dTZaeUZjZUpoOXNvZU0zZUpJS3BEOUtXb3h1SlFwaWlsdldTZ3o2dGpENlpqTlkzMXRlZVwvMnk3bDRyTEVxNEpOVW5lV2kzTFQ5UXRLdmVuNDhcLytuT1wvaU9FVlZJNlp5SkE2bnloQTlTeHBvVDY5T0o4WitcL3k3bHljWVwvTTNcL0FNaDBvOTRSQXdBQSIsInN1YiI6ImFkbWluIiwicm9sZXMiOlsiUk9MRV9BRE1JTiJdLCJpc3MiOiJTcHJpbmcgU2VjdXJpdHkgUkVTVCBHcmFpbHMgUGx1Z2luIiwiZXhwIjoxNjQyMjAwMjQ2LCJpYXQiOjE2NDIxOTY2NDZ9.foLEKavuIh8vHCVida0vHXICmNBgKB9hP2l0BGVF0do",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1,\r\n    \"passwordExpired\": false,\r\n    \"username\": \"admin\",\r\n    \"accountLocked\": false,\r\n    \"password\": \"$2a$10$S8VJEXXLnGF5FEWtmcf/JeuVMKV8HQdaPNDXSFGrJDzYuJDLKdxu2\",\r\n    \"accountExpired\": false,\r\n    \"enabled\": true,\r\n    \"annonces\": []\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/api/user/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"user",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "USER PATCH",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJwcmluY2lwYWwiOiJINHNJQUFBQUFBQUFBSlZTdlVcL2JRQlJcL1RoTlJnVlNnRWtnZFlBRTI1RWgwek1SbjFjb05xR2tXa0VBWCsrRWVuT1wvTTNSbVNwY3BFaHd5cGFKRXFkZTNJZjlJdVwvUU5RTzNSbDd0cDNodURBZ25xVFwvZTduMzlmenhSVlVqSWJuc1daY0dEOFZXY3lsYjFMTlpXd3d6RFMzSFQ4enFDTzBPZUpGRG16U0JLNlBWd0l2Z0JLUExEd05EdGd4cXdvbTQrcG02d0JEVzJ0cldGSTZ2bUhjMXl6QkU2VVBcL1Z2dVVHbThJMUJRZTk5S01MSU5reXdNVlNadFhjbjFkc28xUnRzd1Vjd0NGUjY2MFZSSU55Z3RaOElNUTBkUXNwYkFLSUF4bHRsM2lsUTVHZ3ZqMTJZenkwVzFnYllXd09PVUdVUHU3aVZwV0dmZDNUdWJraEljd1hzb3QxT1BEblczNEtDKzRcL0ZYbFJDVW1pdHA1cHN5VVJIZjUwNmMrTHN6WnpcLzdYN3ZORWdCMXN2andOOFg4MlFwMHYrXC8rbmMyTDlrSUwwMFBXQzFpdG5aS2J5WUw1clVhbmZQbGw2OVA1MVllZFI2VHNFQnZcL3Y0XC81NVp2bU9xc3FTWmxtVmczdGlHaFB5dTZaeUZjZUpoOXNvZU0zZUpJS3BEOUtXb3h1SlFwaWlsdldTZ3o2dGpENlpqTlkzMXRlZVwvMnk3bDRyTEVxNEpOVW5lV2kzTFQ5UXRLdmVuNDhcLytuT1wvaU9FVlZJNlp5SkE2bnloQTlTeHBvVDY5T0o4WitcL3k3bHljWVwvTTNcL0FNaDBvOTRSQXdBQSIsInN1YiI6ImFkbWluIiwicm9sZXMiOlsiUk9MRV9BRE1JTiJdLCJpc3MiOiJTcHJpbmcgU2VjdXJpdHkgUkVTVCBHcmFpbHMgUGx1Z2luIiwiZXhwIjoxNjQyMjAwMjQ2LCJpYXQiOjE2NDIxOTY2NDZ9.foLEKavuIh8vHCVida0vHXICmNBgKB9hP2l0BGVF0do",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"adminx\",\r\n    \"password\": \"admin\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/api/user/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"user",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "USER DELETE",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJwcmluY2lwYWwiOiJINHNJQUFBQUFBQUFBSlZTdlVcL2JRQlJcL1RoTlJnVlNnRWtnZFlBRTI1RWgwek1SbjFjb05xR2tXa0VBWCsrRWVuT1wvTTNSbVNwY3BFaHd5cGFKRXFkZTNJZjlJdVwvUU5RTzNSbDd0cDNodURBZ25xVFwvZTduMzlmenhSVlVqSWJuc1daY0dEOFZXY3lsYjFMTlpXd3d6RFMzSFQ4enFDTzBPZUpGRG16U0JLNlBWd0l2Z0JLUExEd05EdGd4cXdvbTQrcG02d0JEVzJ0cldGSTZ2bUhjMXl6QkU2VVBcL1Z2dVVHbThJMUJRZTk5S01MSU5reXdNVlNadFhjbjFkc28xUnRzd1Vjd0NGUjY2MFZSSU55Z3RaOElNUTBkUXNwYkFLSUF4bHRsM2lsUTVHZ3ZqMTJZenkwVzFnYllXd09PVUdVUHU3aVZwV0dmZDNUdWJraEljd1hzb3QxT1BEblczNEtDKzRcL0ZYbFJDVW1pdHA1cHN5VVJIZjUwNmMrTHN6WnpcLzdYN3ZORWdCMXN2andOOFg4MlFwMHYrXC8rbmMyTDlrSUwwMFBXQzFpdG5aS2J5WUw1clVhbmZQbGw2OVA1MVllZFI2VHNFQnZcL3Y0XC81NVp2bU9xc3FTWmxtVmczdGlHaFB5dTZaeUZjZUpoOXNvZU0zZUpJS3BEOUtXb3h1SlFwaWlsdldTZ3o2dGpENlpqTlkzMXRlZVwvMnk3bDRyTEVxNEpOVW5lV2kzTFQ5UXRLdmVuNDhcLytuT1wvaU9FVlZJNlp5SkE2bnloQTlTeHBvVDY5T0o4WitcL3k3bHljWVwvTTNcL0FNaDBvOTRSQXdBQSIsInN1YiI6ImFkbWluIiwicm9sZXMiOlsiUk9MRV9BRE1JTiJdLCJpc3MiOiJTcHJpbmcgU2VjdXJpdHkgUkVTVCBHcmFpbHMgUGx1Z2luIiwiZXhwIjoxNjQyMjAwMjQ2LCJpYXQiOjE2NDIxOTY2NDZ9.foLEKavuIh8vHCVida0vHXICmNBgKB9hP2l0BGVF0do",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/api/user/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"user",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "USERS GET",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJwcmluY2lwYWwiOiJINHNJQUFBQUFBQUFBSlZTdlVcL2JRQlJcL1RoTlJnVlNnRWtnZFlBRTI1RWgwek1SbjFjb05xR2tXa0VBWCsrRWVuT1wvTTNSbVNwY3BFaHd5cGFKRXFkZTNJZjlJdVwvUU5RTzNSbDd0cDNodURBZ25xVFwvZTduMzlmenhSVlVqSWJuc1daY0dEOFZXY3lsYjFMTlpXd3d6RFMzSFQ4enFDTzBPZUpGRG16U0JLNlBWd0l2Z0JLUExEd05EdGd4cXdvbTQrcG02d0JEVzJ0cldGSTZ2bUhjMXl6QkU2VVBcL1Z2dVVHbThJMUJRZTk5S01MSU5reXdNVlNadFhjbjFkc28xUnRzd1Vjd0NGUjY2MFZSSU55Z3RaOElNUTBkUXNwYkFLSUF4bHRsM2lsUTVHZ3ZqMTJZenkwVzFnYllXd09PVUdVUHU3aVZwV0dmZDNUdWJraEljd1hzb3QxT1BEblczNEtDKzRcL0ZYbFJDVW1pdHA1cHN5VVJIZjUwNmMrTHN6WnpcLzdYN3ZORWdCMXN2andOOFg4MlFwMHYrXC8rbmMyTDlrSUwwMFBXQzFpdG5aS2J5WUw1clVhbmZQbGw2OVA1MVllZFI2VHNFQnZcL3Y0XC81NVp2bU9xc3FTWmxtVmczdGlHaFB5dTZaeUZjZUpoOXNvZU0zZUpJS3BEOUtXb3h1SlFwaWlsdldTZ3o2dGpENlpqTlkzMXRlZVwvMnk3bDRyTEVxNEpOVW5lV2kzTFQ5UXRLdmVuNDhcLytuT1wvaU9FVlZJNlp5SkE2bnloQTlTeHBvVDY5T0o4WitcL3k3bHljWVwvTTNcL0FNaDBvOTRSQXdBQSIsInN1YiI6ImFkbWluIiwicm9sZXMiOlsiUk9MRV9BRE1JTiJdLCJpc3MiOiJTcHJpbmcgU2VjdXJpdHkgUkVTVCBHcmFpbHMgUGx1Z2luIiwiZXhwIjoxNjQyMjAwMjQ2LCJpYXQiOjE2NDIxOTY2NDZ9.foLEKavuIh8vHCVida0vHXICmNBgKB9hP2l0BGVF0do",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8081/api/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "USERS POST",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJwcmluY2lwYWwiOiJINHNJQUFBQUFBQUFBSlZTdlVcL2JRQlJcL1RoTlJnVlNnRWtnZFlBRTI1RWgwek1SbjFjb05xR2tXa0VBWCsrRWVuT1wvTTNSbVNwY3BFaHd5cGFKRXFkZTNJZjlJdVwvUU5RTzNSbDd0cDNodURBZ25xVFwvZTduMzlmenhSVlVqSWJuc1daY0dEOFZXY3lsYjFMTlpXd3d6RFMzSFQ4enFDTzBPZUpGRG16U0JLNlBWd0l2Z0JLUExEd05EdGd4cXdvbTQrcG02d0JEVzJ0cldGSTZ2bUhjMXl6QkU2VVBcL1Z2dVVHbThJMUJRZTk5S01MSU5reXdNVlNadFhjbjFkc28xUnRzd1Vjd0NGUjY2MFZSSU55Z3RaOElNUTBkUXNwYkFLSUF4bHRsM2lsUTVHZ3ZqMTJZenkwVzFnYllXd09PVUdVUHU3aVZwV0dmZDNUdWJraEljd1hzb3QxT1BEblczNEtDKzRcL0ZYbFJDVW1pdHA1cHN5VVJIZjUwNmMrTHN6WnpcLzdYN3ZORWdCMXN2andOOFg4MlFwMHYrXC8rbmMyTDlrSUwwMFBXQzFpdG5aS2J5WUw1clVhbmZQbGw2OVA1MVllZFI2VHNFQnZcL3Y0XC81NVp2bU9xc3FTWmxtVmczdGlHaFB5dTZaeUZjZUpoOXNvZU0zZUpJS3BEOUtXb3h1SlFwaWlsdldTZ3o2dGpENlpqTlkzMXRlZVwvMnk3bDRyTEVxNEpOVW5lV2kzTFQ5UXRLdmVuNDhcLytuT1wvaU9FVlZJNlp5SkE2bnloQTlTeHBvVDY5T0o4WitcL3k3bHljWVwvTTNcL0FNaDBvOTRSQXdBQSIsInN1YiI6ImFkbWluIiwicm9sZXMiOlsiUk9MRV9BRE1JTiJdLCJpc3MiOiJTcHJpbmcgU2VjdXJpdHkgUkVTVCBHcmFpbHMgUGx1Z2luIiwiZXhwIjoxNjQyMjAwMjQ2LCJpYXQiOjE2NDIxOTY2NDZ9.foLEKavuIh8vHCVida0vHXICmNBgKB9hP2l0BGVF0do",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"passwordExpired\": false,\r\n        \"username\": \"TEST_POST\",\r\n        \"accountLocked\": false,\r\n        \"password\": \"123456\",\r\n        \"accountExpired\": false,\r\n        \"enabled\": true,\r\n        \"annonces\": []\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/api/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ANNONCE GET",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJwcmluY2lwYWwiOiJINHNJQUFBQUFBQUFBSlZTdlVcL2JRQlJcL1RoTlJnVlNnRWtnZFlBRTI1RWgwek1SbjFjb05xR2tXa0VBWCsrRWVuT1wvTTNSbVNwY3BFaHd5cGFKRXFkZTNJZjlJdVwvUU5RTzNSbDd0cDNodURBZ25xVFwvZTduMzlmenhSVlVqSWJuc1daY0dEOFZXY3lsYjFMTlpXd3d6RFMzSFQ4enFDTzBPZUpGRG16U0JLNlBWd0l2Z0JLUExEd05EdGd4cXdvbTQrcG02d0JEVzJ0cldGSTZ2bUhjMXl6QkU2VVBcL1Z2dVVHbThJMUJRZTk5S01MSU5reXdNVlNadFhjbjFkc28xUnRzd1Vjd0NGUjY2MFZSSU55Z3RaOElNUTBkUXNwYkFLSUF4bHRsM2lsUTVHZ3ZqMTJZenkwVzFnYllXd09PVUdVUHU3aVZwV0dmZDNUdWJraEljd1hzb3QxT1BEblczNEtDKzRcL0ZYbFJDVW1pdHA1cHN5VVJIZjUwNmMrTHN6WnpcLzdYN3ZORWdCMXN2andOOFg4MlFwMHYrXC8rbmMyTDlrSUwwMFBXQzFpdG5aS2J5WUw1clVhbmZQbGw2OVA1MVllZFI2VHNFQnZcL3Y0XC81NVp2bU9xc3FTWmxtVmczdGlHaFB5dTZaeUZjZUpoOXNvZU0zZUpJS3BEOUtXb3h1SlFwaWlsdldTZ3o2dGpENlpqTlkzMXRlZVwvMnk3bDRyTEVxNEpOVW5lV2kzTFQ5UXRLdmVuNDhcLytuT1wvaU9FVlZJNlp5SkE2bnloQTlTeHBvVDY5T0o4WitcL3k3bHljWVwvTTNcL0FNaDBvOTRSQXdBQSIsInN1YiI6ImFkbWluIiwicm9sZXMiOlsiUk9MRV9BRE1JTiJdLCJpc3MiOiJTcHJpbmcgU2VjdXJpdHkgUkVTVCBHcmFpbHMgUGx1Z2luIiwiZXhwIjoxNjQyMTk5Mzg5LCJpYXQiOjE2NDIxOTU3ODl9.Gxlhaqn20WXzpLaGjjGmwJeel4oGf7BgPmGOHlA5DwU",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8081/api/annonce/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"annonce",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ANNONCE PUT",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJwcmluY2lwYWwiOiJINHNJQUFBQUFBQUFBSlZTdlVcL2JRQlJcL1RoTlJnVlNnRWtnZFlBRTI1RWgwek1SbjFjb05xR2tXa0VBWCsrRWVuT1wvTTNSbVNwY3BFaHd5cGFKRXFkZTNJZjlJdVwvUU5RTzNSbDd0cDNodURBZ25xVFwvZTduMzlmenhSVlVqSWJuc1daY0dEOFZXY3lsYjFMTlpXd3d6RFMzSFQ4enFDTzBPZUpGRG16U0JLNlBWd0l2Z0JLUExEd05EdGd4cXdvbTQrcG02d0JEVzJ0cldGSTZ2bUhjMXl6QkU2VVBcL1Z2dVVHbThJMUJRZTk5S01MSU5reXdNVlNadFhjbjFkc28xUnRzd1Vjd0NGUjY2MFZSSU55Z3RaOElNUTBkUXNwYkFLSUF4bHRsM2lsUTVHZ3ZqMTJZenkwVzFnYllXd09PVUdVUHU3aVZwV0dmZDNUdWJraEljd1hzb3QxT1BEblczNEtDKzRcL0ZYbFJDVW1pdHA1cHN5VVJIZjUwNmMrTHN6WnpcLzdYN3ZORWdCMXN2andOOFg4MlFwMHYrXC8rbmMyTDlrSUwwMFBXQzFpdG5aS2J5WUw1clVhbmZQbGw2OVA1MVllZFI2VHNFQnZcL3Y0XC81NVp2bU9xc3FTWmxtVmczdGlHaFB5dTZaeUZjZUpoOXNvZU0zZUpJS3BEOUtXb3h1SlFwaWlsdldTZ3o2dGpENlpqTlkzMXRlZVwvMnk3bDRyTEVxNEpOVW5lV2kzTFQ5UXRLdmVuNDhcLytuT1wvaU9FVlZJNlp5SkE2bnloQTlTeHBvVDY5T0o4WitcL3k3bHljWVwvTTNcL0FNaDBvOTRSQXdBQSIsInN1YiI6ImFkbWluIiwicm9sZXMiOlsiUk9MRV9BRE1JTiJdLCJpc3MiOiJTcHJpbmcgU2VjdXJpdHkgUkVTVCBHcmFpbHMgUGx1Z2luIiwiZXhwIjoxNjQyMjAxMjM2LCJpYXQiOjE2NDIxOTc2MzZ9.UZrlZB7JFubZPaOUDdWs1-oSK9k1bC5Y7KMfdQJaqnU",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Title Alice 1 PUT TEST\",\r\n    \"dateCreated\": \"2022-01-14T22:00:30Z\",\r\n    \"price\": 100.0,\r\n    \"lastUpdated\": \"2022-01-14T22:00:30Z\",\r\n    \"illustrations\": [\r\n        {\r\n            \"id\": 1\r\n        },\r\n        {\r\n            \"id\": 2\r\n        }\r\n    ],\r\n    \"status\": true,\r\n    \"ref\": \"#Alice:1\",\r\n    \"description\": \"Description Alice 1\",\r\n    \"author\": {\r\n        \"id\": 4\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/api/annonce/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"annonce",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ANNONCE PATCHED",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJwcmluY2lwYWwiOiJINHNJQUFBQUFBQUFBSlZTdlVcL2JRQlJcL1RoTlJnVlNnRWtnZFlBRTI1RWgwek1SbjFjb05xR2tXa0VBWCsrRWVuT1wvTTNSbVNwY3BFaHd5cGFKRXFkZTNJZjlJdVwvUU5RTzNSbDd0cDNodURBZ25xVFwvZTduMzlmenhSVlVqSWJuc1daY0dEOFZXY3lsYjFMTlpXd3d6RFMzSFQ4enFDTzBPZUpGRG16U0JLNlBWd0l2Z0JLUExEd05EdGd4cXdvbTQrcG02d0JEVzJ0cldGSTZ2bUhjMXl6QkU2VVBcL1Z2dVVHbThJMUJRZTk5S01MSU5reXdNVlNadFhjbjFkc28xUnRzd1Vjd0NGUjY2MFZSSU55Z3RaOElNUTBkUXNwYkFLSUF4bHRsM2lsUTVHZ3ZqMTJZenkwVzFnYllXd09PVUdVUHU3aVZwV0dmZDNUdWJraEljd1hzb3QxT1BEblczNEtDKzRcL0ZYbFJDVW1pdHA1cHN5VVJIZjUwNmMrTHN6WnpcLzdYN3ZORWdCMXN2andOOFg4MlFwMHYrXC8rbmMyTDlrSUwwMFBXQzFpdG5aS2J5WUw1clVhbmZQbGw2OVA1MVllZFI2VHNFQnZcL3Y0XC81NVp2bU9xc3FTWmxtVmczdGlHaFB5dTZaeUZjZUpoOXNvZU0zZUpJS3BEOUtXb3h1SlFwaWlsdldTZ3o2dGpENlpqTlkzMXRlZVwvMnk3bDRyTEVxNEpOVW5lV2kzTFQ5UXRLdmVuNDhcLytuT1wvaU9FVlZJNlp5SkE2bnloQTlTeHBvVDY5T0o4WitcL3k3bHljWVwvTTNcL0FNaDBvOTRSQXdBQSIsInN1YiI6ImFkbWluIiwicm9sZXMiOlsiUk9MRV9BRE1JTiJdLCJpc3MiOiJTcHJpbmcgU2VjdXJpdHkgUkVTVCBHcmFpbHMgUGx1Z2luIiwiZXhwIjoxNjQyMjAxMjM2LCJpYXQiOjE2NDIxOTc2MzZ9.UZrlZB7JFubZPaOUDdWs1-oSK9k1bC5Y7KMfdQJaqnU",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Title Alice 1 PATCHED\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/api/annonce/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"annonce",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ANNONCE DELETE",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJwcmluY2lwYWwiOiJINHNJQUFBQUFBQUFBSlZTdlVcL2JRQlJcL1RoTlJnVlNnRWtnZFlBRTI1RWgwek1SbjFjb05xR2tXa0VBWCsrRWVuT1wvTTNSbVNwY3BFaHd5cGFKRXFkZTNJZjlJdVwvUU5RTzNSbDd0cDNodURBZ25xVFwvZTduMzlmenhSVlVqSWJuc1daY0dEOFZXY3lsYjFMTlpXd3d6RFMzSFQ4enFDTzBPZUpGRG16U0JLNlBWd0l2Z0JLUExEd05EdGd4cXdvbTQrcG02d0JEVzJ0cldGSTZ2bUhjMXl6QkU2VVBcL1Z2dVVHbThJMUJRZTk5S01MSU5reXdNVlNadFhjbjFkc28xUnRzd1Vjd0NGUjY2MFZSSU55Z3RaOElNUTBkUXNwYkFLSUF4bHRsM2lsUTVHZ3ZqMTJZenkwVzFnYllXd09PVUdVUHU3aVZwV0dmZDNUdWJraEljd1hzb3QxT1BEblczNEtDKzRcL0ZYbFJDVW1pdHA1cHN5VVJIZjUwNmMrTHN6WnpcLzdYN3ZORWdCMXN2andOOFg4MlFwMHYrXC8rbmMyTDlrSUwwMFBXQzFpdG5aS2J5WUw1clVhbmZQbGw2OVA1MVllZFI2VHNFQnZcL3Y0XC81NVp2bU9xc3FTWmxtVmczdGlHaFB5dTZaeUZjZUpoOXNvZU0zZUpJS3BEOUtXb3h1SlFwaWlsdldTZ3o2dGpENlpqTlkzMXRlZVwvMnk3bDRyTEVxNEpOVW5lV2kzTFQ5UXRLdmVuNDhcLytuT1wvaU9FVlZJNlp5SkE2bnloQTlTeHBvVDY5T0o4WitcL3k3bHljWVwvTTNcL0FNaDBvOTRSQXdBQSIsInN1YiI6ImFkbWluIiwicm9sZXMiOlsiUk9MRV9BRE1JTiJdLCJpc3MiOiJTcHJpbmcgU2VjdXJpdHkgUkVTVCBHcmFpbHMgUGx1Z2luIiwiZXhwIjoxNjQyMjAwMjQ2LCJpYXQiOjE2NDIxOTY2NDZ9.foLEKavuIh8vHCVida0vHXICmNBgKB9hP2l0BGVF0do",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/api/annonce/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"annonce",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ANNONCES GET",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJwcmluY2lwYWwiOiJINHNJQUFBQUFBQUFBSlZTdlVcL2JRQlJcL1RoTlJnVlNnRWtnZFlBRTI1RWgwek1SbjFjb05xR2tXa0VBWCsrRWVuT1wvTTNSbVNwY3BFaHd5cGFKRXFkZTNJZjlJdVwvUU5RTzNSbDd0cDNodURBZ25xVFwvZTduMzlmenhSVlVqSWJuc1daY0dEOFZXY3lsYjFMTlpXd3d6RFMzSFQ4enFDTzBPZUpGRG16U0JLNlBWd0l2Z0JLUExEd05EdGd4cXdvbTQrcG02d0JEVzJ0cldGSTZ2bUhjMXl6QkU2VVBcL1Z2dVVHbThJMUJRZTk5S01MSU5reXdNVlNadFhjbjFkc28xUnRzd1Vjd0NGUjY2MFZSSU55Z3RaOElNUTBkUXNwYkFLSUF4bHRsM2lsUTVHZ3ZqMTJZenkwVzFnYllXd09PVUdVUHU3aVZwV0dmZDNUdWJraEljd1hzb3QxT1BEblczNEtDKzRcL0ZYbFJDVW1pdHA1cHN5VVJIZjUwNmMrTHN6WnpcLzdYN3ZORWdCMXN2andOOFg4MlFwMHYrXC8rbmMyTDlrSUwwMFBXQzFpdG5aS2J5WUw1clVhbmZQbGw2OVA1MVllZFI2VHNFQnZcL3Y0XC81NVp2bU9xc3FTWmxtVmczdGlHaFB5dTZaeUZjZUpoOXNvZU0zZUpJS3BEOUtXb3h1SlFwaWlsdldTZ3o2dGpENlpqTlkzMXRlZVwvMnk3bDRyTEVxNEpOVW5lV2kzTFQ5UXRLdmVuNDhcLytuT1wvaU9FVlZJNlp5SkE2bnloQTlTeHBvVDY5T0o4WitcL3k3bHljWVwvTTNcL0FNaDBvOTRSQXdBQSIsInN1YiI6ImFkbWluIiwicm9sZXMiOlsiUk9MRV9BRE1JTiJdLCJpc3MiOiJTcHJpbmcgU2VjdXJpdHkgUkVTVCBHcmFpbHMgUGx1Z2luIiwiZXhwIjoxNjQyMjAwMjQ2LCJpYXQiOjE2NDIxOTY2NDZ9.foLEKavuIh8vHCVida0vHXICmNBgKB9hP2l0BGVF0do",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8081/api/annonces",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"annonces"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ANNONCES POST",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJwcmluY2lwYWwiOiJINHNJQUFBQUFBQUFBSlZTdlVcL2JRQlJcL1RoTlJnVlNnRWtnZFlBRTI1RWgwek1SbjFjb05xR2tXa0VBWCsrRWVuT1wvTTNSbVNwY3BFaHd5cGFKRXFkZTNJZjlJdVwvUU5RTzNSbDd0cDNodURBZ25xVFwvZTduMzlmenhSVlVqSWJuc1daY0dEOFZXY3lsYjFMTlpXd3d6RFMzSFQ4enFDTzBPZUpGRG16U0JLNlBWd0l2Z0JLUExEd05EdGd4cXdvbTQrcG02d0JEVzJ0cldGSTZ2bUhjMXl6QkU2VVBcL1Z2dVVHbThJMUJRZTk5S01MSU5reXdNVlNadFhjbjFkc28xUnRzd1Vjd0NGUjY2MFZSSU55Z3RaOElNUTBkUXNwYkFLSUF4bHRsM2lsUTVHZ3ZqMTJZenkwVzFnYllXd09PVUdVUHU3aVZwV0dmZDNUdWJraEljd1hzb3QxT1BEblczNEtDKzRcL0ZYbFJDVW1pdHA1cHN5VVJIZjUwNmMrTHN6WnpcLzdYN3ZORWdCMXN2andOOFg4MlFwMHYrXC8rbmMyTDlrSUwwMFBXQzFpdG5aS2J5WUw1clVhbmZQbGw2OVA1MVllZFI2VHNFQnZcL3Y0XC81NVp2bU9xc3FTWmxtVmczdGlHaFB5dTZaeUZjZUpoOXNvZU0zZUpJS3BEOUtXb3h1SlFwaWlsdldTZ3o2dGpENlpqTlkzMXRlZVwvMnk3bDRyTEVxNEpOVW5lV2kzTFQ5UXRLdmVuNDhcLytuT1wvaU9FVlZJNlp5SkE2bnloQTlTeHBvVDY5T0o4WitcL3k3bHljWVwvTTNcL0FNaDBvOTRSQXdBQSIsInN1YiI6ImFkbWluIiwicm9sZXMiOlsiUk9MRV9BRE1JTiJdLCJpc3MiOiJTcHJpbmcgU2VjdXJpdHkgUkVTVCBHcmFpbHMgUGx1Z2luIiwiZXhwIjoxNjQyMjAwMjQ2LCJpYXQiOjE2NDIxOTY2NDZ9.foLEKavuIh8vHCVida0vHXICmNBgKB9hP2l0BGVF0do",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"id\": 34,\r\n        \"title\": \"POST TEST\",\r\n        \"dateCreated\": \"2022-01-14T22:00:30Z\",\r\n        \"price\": 100.0,\r\n        \"lastUpdated\": \"2022-01-14T22:10:05Z\",\r\n        \"illustrations\": [\r\n            {\r\n                \"id\": 1\r\n            },\r\n            {\r\n                \"id\": 2\r\n            }\r\n        ],\r\n        \"status\": true,\r\n        \"ref\": \"#Alice:1\",\r\n        \"description\": \"Description Alice 1\",\r\n        \"author\": {\r\n            \"id\": 4\r\n        }\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/api/annonces",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"annonces"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
